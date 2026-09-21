@@ -1,0 +1,268 @@
+:root {
+  --bg: #fff9f4;
+  --panel: #ffffff;
+  --panel-soft: #fff1e7;
+  --primary: #ff7a59;
+  --primary-deep: #e65d3b;
+  --text: #1b1b1f;
+  --muted: #62656f;
+  --line: #f0e4dc;
+  --gold: #ffb84d;
+  --green: #38b38f;
+  --shadow: 0 22px 60px rgba(30, 24, 22, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #fff1e7 0%, #f5f0ff 100%);
+  color: var(--text);
+}
+
+.page-bg {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+}
+
+.demo-shell {
+  width: min(420px, 100%);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(27, 27, 31, 0.06);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  padding: 22px 18px 18px;
+  backdrop-filter: blur(10px);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--primary-deep);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.app-header h1 {
+  margin: 6px 0 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.05em;
+}
+
+.header-btn {
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.app-main {
+  display: grid;
+  gap: 18px;
+}
+
+.group-card,
+.plan-item,
+.podio-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 10px 18px rgba(27, 27, 31, 0.03);
+}
+
+.group-card {
+  padding: 16px;
+}
+
+.group-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-label {
+  display: inline-block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.group-head h2 {
+  margin: 0;
+  font-size: 1.28rem;
+  letter-spacing: -0.04em;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--panel-soft);
+  color: var(--primary-deep);
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 0.72rem;
+}
+
+.group-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.group-meta div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.group-meta strong {
+  font-size: 1.2rem;
+}
+
+.group-meta span {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.plan-list {
+  display: grid;
+  gap: 12px;
+}
+
+.plan-item {
+  padding: 16px;
+}
+
+.plan-item.featured {
+  background: linear-gradient(180deg, #fffaf6 0%, #fff6ee 100%);
+  border-color: rgba(255, 122, 89, 0.2);
+}
+
+.plan-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 122, 89, 0.12);
+  color: var(--primary-deep);
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.person {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.plan-item h3 {
+  margin: 14px 0 6px;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+.plan-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.rating-row {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.rating-row span {
+  font-weight: 700;
+  color: #9d5e16;
+}
+
+.rating-row button {
+  border: 0;
+  border-radius: 999px;
+  background: #f4f7fa;
+  color: var(--text);
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+.podio-card {
+  padding: 16px;
+}
+
+.podio-title h3 {
+  margin: 4px 0 0;
+  font-size: 1.2rem;
+}
+
+.podio-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.podio-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #faf9f8;
+}
+
+.rank {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-weight: 800;
+  background: #f3f0ed;
+}
+
+.first .rank { background: #f8d57d; }
+.second .rank { background: #e6ecf2; }
+.third .rank { background: #f2d6c8; }
+
+.podio-item strong,
+.podio-item small {
+  display: block;
+}
+
+.podio-item small {
+  color: var(--muted);
+  margin-top: 2px;
+}
