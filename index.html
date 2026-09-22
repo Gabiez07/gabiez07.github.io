@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Writer | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of a prompt writer specializing in AI for content and idea generation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">PW</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#inicio">Home</a>
+          <a href="#habilidades">Skills</a>
+          <a href="#proyecto">Project</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="inicio" class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Prompt Writer</p>
+            <h1>Gabriel López</h1>
+            <p class="intro">
+              I experiment with generative AI by designing clear instructions, testing outputs, identifying issues, and refining results through iteration.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#proyecto">View project</a>
+              <a class="button secondary" href="#habilidades">Skills</a>
+            </div>
+            <ul class="meta-list" aria-label="Contact information">
+              <li>gabrieldlopez2020@gmail.com</li>
+              <li>Argentina</li>
+              <li>Full-time availability</li>
+            </ul>
+          </div>
+
+          <aside class="profile-card" aria-label="Professional profile">
+            <div class="profile-badge">Profile</div>
+            <p>
+              I am an aspiring Prompt Writer with a strong interest in artificial intelligence, creative problem-solving, and AI evaluation.
+
+I regularly use ChatGPT, Claude, Gemini, and GitHub Copilot for learning, experimentation, research, and development.
+
+I enjoy exploring how different instructions affect AI-generated results, testing outputs in realistic situations, identifying problems, and improving them through iteration.
+            </p>
+            <div class="mini-stats"></div>
+          </aside>
+        </section>
+
+        <section id="habilidades" class="skills section-block">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2>What I can bring</h2>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Prompt design</h3>
+              <p>
+                I write clear, structured instructions to achieve useful, coherent,
+                and brand-aligned results.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Content strategy</h3>
+              <p>
+                I define goals, tone, audience, and structure so AI generates content
+                with purpose and editorial consistency.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>HTML / CSS / SCSS</h3>
+              <p>
+                I handle web layout with HTML, CSS, and SCSS, paying attention to
+                structure, readability, and visual styles aligned with digital identity.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Git / SEO / Responsive</h3>
+              <p>
+                I work with version control in Git, understand basic SEO, and design
+                interfaces adapted for mobile, tablet, and desktop for a better user
+                experience.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="proyecto" class="project section-block">
+          <div class="section-heading">
+            <p class="eyebrow">Personal project</p>
+            <h2>Developing an idea with AI</h2>
+          </div>
+
+          <div class="project-feature">
+            <div class="project-copy">
+              <h3>"Planazo"</h3>
+              <p>
+                A personal web application developed with GitHub Copilot through an iterative prompt-and-feedback process.
+              </p>
+              <div class="project-tag">prompt creation + evaluation + iteration + creative problem-solving</div>
+            </div>
+          </div>
+
+          <div class="image-gallery" aria-label="Evidence of the AI process">
+            <article class="media-card">
+              <div class="media-placeholder"><img src="planazo_uno.png" alt="Base prompt idea" /></div>
+              <div class="media-copy">
+                <strong>Base idea</strong>
+                <span>Selection of the theme, objective, and target audience.</span>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <div class="media-placeholder"><img src="planazo_tres.png" alt="Prompt refinement" /></div>
+              <div class="media-copy">
+                <strong>Refinement prompt</strong>
+                <span>Prompt iteration to improve clarity, tone, and format.</span>
+              </div>
+            </article>
+
+            <article class="media-card">
+              <div class="media-placeholder"><img src="planazo_cuatro.png" alt="Final prompt result" /></div>
+              <div class="media-copy">
+                <strong>Final result</strong>
+                <span>Content ready to publish and adapt by channel.</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="app-link-block">
+            <a
+              class="button primary app-button"
+              href="planazo-demo.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View app demo
+            </a>
+          </div>
+
+          <div class="prompt-flow">
+            <article class="prompt-card">
+              <span class="label">Initial prompt</span>
+              <p>
+                “I want to build a web app called Planazo. It is a mobile app that helps users organize outings and activities with friends. It is designed for people who are not tech-savvy. It should have 4 tables: groups, members, plans, and votes.”
+              </p>
+            </article>
+
+            <article class="prompt-card">
+              <span class="label">Test prompt</span>
+              <p>
+                “I entered the app and there is an error that prevents me from going back to the home screen. Create a new back button. It should also be more colorful and informal, with a friends vibe. Use the language and themes of the local target audience, such as Argentine.”
+              </p>
+            </article>
+
+            <article class="prompt-card result">
+              <span class="label">Final result</span>
+              <p>
+                The AI model generated an intuitive, simple, and useful app that met the instructions and proposed objective. Anyone can use it from their phone to suggest and vote on plans with friends or family.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
